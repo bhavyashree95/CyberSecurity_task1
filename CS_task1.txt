@@ -1,0 +1,106 @@
+C:\Users\rekhapc>netstat -a
+
+Active Connections
+
+  Proto  Local Address          Foreign Address        State
+  
+  TCP    192.168.43.136:139     DESKTOP-GPDHUE7:0      LISTENING
+  TCP    192.168.43.136:51390   192.168.43.1:domain    TIME_WAIT
+  TCP    192.168.43.136:51496   192.168.43.1:domain    TIME_WAIT
+  TCP    192.168.43.136:54832   192.168.43.1:domain    ESTABLISHED
+  TCP    192.168.43.136:54910   bom12s18-in-f5:https   TIME_WAIT
+  TCP    192.168.43.136:54921   a104-77-173-10:http    TIME_WAIT
+  TCP    192.168.43.136:55428   192.168.43.1:domain    TIME_WAIT
+  TCP    192.168.43.136:55431   pnmaaa-av-in-f3:https  ESTABLISHED
+  TCP    192.168.43.136:55432   pnmaaa-av-in-f3:https  TIME_WAIT
+  TCP    192.168.43.136:55444   maa03s42-in-f10:https  ESTABLISHED
+  TCP    192.168.43.136:55454   a104-77-173-10:http    TIME_WAIT
+  TCP    192.168.43.136:56786   192.168.43.1:domain    TIME_WAIT
+  TCP    192.168.43.136:58008   192.168.43.1:domain    TIME_WAIT
+  TCP    192.168.43.136:58015   150.171.28.12:https    ESTABLISHED
+  TCP    192.168.43.136:58016   40.126.17.134:https    ESTABLISHED
+  TCP    192.168.43.136:58022   bom12s14-in-f3:https   LAST_ACK
+  TCP    192.168.43.136:58025   40.126.17.134:https    ESTABLISHED
+  TCP    192.168.43.136:58029   maa05s17-in-f14:https  LAST_ACK
+  TCP    192.168.43.136:58030   maa05s17-in-f14:https  LAST_ACK
+  TCP    192.168.43.136:58032   40.126.17.134:https    ESTABLISHED
+  TCP    192.168.43.136:58037   pnmaaa-av-in-f3:https  LAST_ACK
+  TCP    192.168.43.136:58045   a23-201-53-145:https   ESTABLISHED
+  TCP    192.168.43.136:58048   4.213.25.240:https     ESTABLISHED
+  TCP    192.168.43.136:58051   a23-53-128-229:http    ESTABLISHED
+  TCP    192.168.43.136:58058   lcmaaa-at-in-f10:https  LAST_ACK
+  TCP    192.168.43.136:58060   40.126.17.134:https    ESTABLISHED
+  TCP    192.168.43.136:58069   40.126.17.134:https    SYN_SENT
+  TCP    192.168.43.136:58070   40.126.17.134:https    ESTABLISHED
+  TCP    192.168.43.136:58071   40.126.17.134:https    ESTABLISHED
+  TCP    192.168.43.136:58075   maa05s17-in-f14:https  SYN_SENT
+  TCP    192.168.43.136:58079   bkk02s01-in-f14:https  ESTABLISHED
+  TCP    192.168.43.136:58083   pnbomb-ab-in-f3:http   ESTABLISHED
+  TCP    192.168.43.136:58086   a23-53-128-229:http    ESTABLISHED
+  TCP    192.168.43.136:58088   bom12s16-in-f10:https  ESTABLISHED
+  TCP    192.168.43.136:58101   bkk02s01-in-f14:https  ESTABLISHED
+  TCP    192.168.43.136:58103   a23-11-215-217:https   SYN_SENT
+  TCP    192.168.43.136:62577   192.168.43.1:domain    ESTABLISHED
+  TCP    192.168.43.136:63642   192.168.43.1:domain    TIME_WAIT
+  TCP    192.168.137.1:139      DESKTOP-GPDHUE7:0      LISTENING
+
+
+
+ LISTENING signifies a server is passively awaiting a connection request
+
+ ESTABLISHED means a connection is active and data can be exchanged
+
+ TIME_WAIT is a transitional state after connection closure
+
+ LAST_ACK indicates the final acknowledgement of a terminated connection
+
+ and SYN_SENT means a connection request has been sent but not yet confirmed
+
+
+
+
+Port 139 is commonly associated with SMB (Server Message Block) over NetBIOS,
+ primarily used for file and printer sharing in Windows networks
+
+Port 51390 is a commonly used port number, particularly for services
+ associated with Application Server Java in SAP products
+
+
+Port numbers between 49152 to 65535 are Dynamic 
+ports, also known as private or ephemeral ports.
+These ports are not assigned,controlled, or registered,
+and are used for temporary or private connections by clients.
+They are typically used by client applications when communicating
+with servers, which often listen on well-known or registered ports.
+
+
+
+Potential Security Risks
+
+Unauthorized Access:
+Attackers can use open ports to gain remote access to a system, potentially allowing them to steal data, install malware, or take control of the system. 
+Malware Distribution:
+Open ports can be used as entry points for malware, which can then spread across a network. 
+
+DDoS Attacks:
+Attackers can exploit open ports to launch Distributed Denial of Service (DDoS) attacks, overwhelming a network with traffic and making it unavailable. 
+Vulnerability Exploitation:
+Unsecured open ports can expose underlying software or services with known vulnerabilities, making them easy targets for attackers.
+ 
+Injection Attacks:
+Open ports, especially those used by database services, can be vulnerable to injection attacks, where attackers manipulate database queries to gain access to sensitive information. 
+Insider Threats:
+Malicious insiders can use open ports to bypass security measures and gain unauthorized access to sensitive data. 
+
+Brute Force Attacks:
+Attackers can use automated tools to try different passwords or credentials on open ports, potentially gaining access to systems with weak security. 
+
+Increased Attack Surface:
+Every open port adds to the overall attack surface, making the network more vulnerable to attacks.
+ 
+Data Breaches:
+Open ports can be a pathway for data breaches, where attackers can access and steal sensitive information. 
+
+Ransomware Attacks:
+Open ports can be exploited as entry points for ransomware attacks, which can encrypt sensitive data and demand a ransom for its release. 
+  
