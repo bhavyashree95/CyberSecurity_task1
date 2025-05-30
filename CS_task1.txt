@@ -1,4 +1,4 @@
-C:\Users\rekhapc>netstat -a
+C:\Users>netstat -a
 
 Active Connections
 
